@@ -2,13 +2,14 @@ import { useEffect, useState } from 'react'
 import './App.css'
 
 const pages = ['Home', 'About', 'Projects', 'Education', 'Services', 'Contact']
+const publicBase = import.meta.env.BASE_URL
 
 const projects = [
   {
     number: '01',
     name: 'Intel Encore AI Exhibit',
     category: 'Immersive exhibit',
-    image: '/images/Project%201.jpg',
+    image: `${publicBase}images/Project%201.jpg`,
     alt: 'Colorful balloons in an immersive exhibition space',
     description: 'Showcased work from nine emerging North American mixed-media artists, who used AI-powered technology and Intel Core Ultra processors to reimagine their previous creations.',
     role: 'Experiential Engineer',
@@ -18,7 +19,7 @@ const projects = [
     number: '02',
     name: 'Mythos',
     category: 'Interactive show',
-    image: '/images/Project%202.jpg',
+    image: `${publicBase}images/Project%202.jpg`,
     alt: 'A visitor exploring a vivid immersive light installation',
     description: 'An interactive exhibition uncovering universal threads in global folklore. Journeying through traditions from China, the Haudenosaunee Confederacy, and Nigeria, visitors explore themes of creation, balance, perseverance, and shared humanity.',
     role: 'Experiential Engineer',
@@ -28,7 +29,7 @@ const projects = [
     number: '03',
     name: 'Waves',
     category: 'Immersive programming',
-    image: '/images/Project%203.jpg',
+    image: `${publicBase}images/Project%203.jpg`,
     alt: 'A sofa in a room surrounded by an ocean-themed digital installation',
     description: 'A monthly sensory retreat merging yoga with large-scale generative projection mapping. As participants move through postures, visuals shift with the ebb and flow of breath, from grounding swells to uplifting tides, bridging the digital environment and inner calm.',
     role: 'Experiential Engineer',
@@ -70,7 +71,7 @@ function App() {
             <div className="about-layout">
               <img
                 className="about-photo"
-                src="/images/About%20portrait.jpg"
+                src={`${publicBase}images/About%20portrait.jpg`}
                 alt="Avi standing in front of an illuminated geometric grid"
               />
               <div className="about-copy">
@@ -88,7 +89,7 @@ function App() {
                   development, I bridge backend reliability, intelligent data pipelines, and
                   responsive interfaces to create stable, high-impact digital experiences.
                 </p>
-                <a className="text-link" href="/resume.pdf" download>
+                <a className="text-link" href={`${publicBase}resume.pdf`} download>
                   Download résumé PDF <span aria-hidden="true">↗</span>
                 </a>
               </div>
@@ -231,7 +232,7 @@ function App() {
               <p className="home-location">Based in Toronto, Canada <span aria-hidden="true">·</span> Open to collaboration</p>
             </div>
             <div className="home-visual">
-              <img src="/images/Home%20portrait.jpg" alt="Close-up portrait of Avi smiling" />
+              <img src={`${publicBase}images/Home%20portrait.jpg`} alt="Close-up portrait of Avi smiling" />
               <div className="visual-caption"><span>Curiosity, with a point of view.</span><span>43° 39' N · 79° 23' W</span></div>
               <div className="visual-stamp" aria-hidden="true">A<br />B</div>
             </div>
