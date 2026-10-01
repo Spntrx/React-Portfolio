@@ -31,7 +31,7 @@ The form requires a visitor's first name, last name, contact number, email addre
 ## Assignment handoff
 
 - [ ] Review portfolio content and résumé before publishing.
-- [ ] Create a GitHub repository and push the complete source project.
+- [x] Create a GitHub repository and push the complete source project: [Spntrx/React-Portfolio](https://github.com/Spntrx/React-Portfolio).
 - [ ] Deploy the production build from `dist/` using a static host such as Netlify, Vercel, or Render.
-- [ ] Add the GitHub repository and live-site URLs to the assignment submission.
-- [ ] Include a ZIP of the project source; exclude `node_modules/` and `dist/`.
+- [ ] Add the live-site URL to the assignment submission.
+- [x] Include a ZIP of the project source; exclude `node_modules/` and `dist/`.
