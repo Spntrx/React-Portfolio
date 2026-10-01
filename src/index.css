@@ -1,0 +1,27 @@
+:root {
+  font-family: 'DM Sans', 'Segoe UI', sans-serif;
+  color: #203b37;
+  background: #f5f7f3;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  --ink: #203b37;
+  --green: #24453e;
+  --coral: #d65e47;
+  --lime: #d7e990;
+  --muted: #63716b;
+  --line: #dce2dc;
+  --sans: 'DM Sans', 'Segoe UI', sans-serif;
+  --display: 'Fraunces', Georgia, serif;
+}
+
+* { box-sizing: border-box; }
+html { min-width: 320px; scroll-behavior: smooth; }
+body { min-width: 320px; min-height: 100vh; margin: 0; }
+#root { width: 100%; min-height: 100vh; margin: 0; text-align: left; }
+button, input, textarea { font: inherit; }
+::selection { background: #d7e990; color: #203b37; }
+
